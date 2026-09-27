@@ -1,0 +1,84 @@
+/* Features Section */
+
+.features-section {
+    background-color: #121214;
+    padding: 80px 40px;
+    margin-top: 0px;
+}
+
+.feature-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+
+.feature-card {
+    background-color: #1a1a1a;
+    border: 2px solid #292929;
+    border-radius: 22px;
+    padding: 30px 25px;
+    color: white;
+    text-align: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff4d4d;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6347;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Card Description */
+.card-description {
+    color: #bdbdbd;
+    line-height: 1.7;
+    font-size: 15px;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .feature-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .features-section {
+        padding: 60px 20px;
+    }
+
+    .feature-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feature-card {
+        padding: 25px 20px;
+    }
+}

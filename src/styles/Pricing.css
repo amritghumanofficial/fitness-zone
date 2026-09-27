@@ -1,0 +1,180 @@
+/* Pricing Section */
+.pricing-card-container {
+  width: 100%;
+  box-sizing: border-box;
+  background: #121214;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+
+/* Main Card */
+.priceCard {
+  display: flex;
+  flex-direction: column;
+    background-color: #292929;
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  min-height: 500px;
+  transition: 0.3s ease;
+}
+
+
+.priceCard:hover {
+  transform: translateY(-10px);
+}
+
+
+/* Badge */
+.priceBadge {
+  display: inline-block;
+  background: #ff4d4d;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+/* Plan Name */
+.planName {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Price */
+.planPrice {
+  color: #ff6347;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+
+/* Tagline */
+.planTagline {
+  color: #cccccc;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+
+/* Features */
+.planFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+
+.planFeatures li {
+  color: #eeeeee;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* Button */
+.planButton {
+  background: #ff6347;
+
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: auto;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.planButton:hover {
+  background: transparent;
+  border: 2px solid #ff6347;
+  transform: translateY(-4px);
+
+}
+
+
+.featuresComparison {
+        background-color: #121214;
+    padding: 80px 40px;
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px auto;
+  color: #ffffff;
+}
+
+
+/* Table Header */
+.comparisonHead {
+  background: #ff6347;
+}
+
+
+.comparisonHead th {
+  padding: 20px;
+  font-size: 23px;
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid #333;
+
+  transition: 0.3s ease;
+}
+
+
+.comparisonHead th:hover {
+  background: transparent;
+  border: 2px solid #ff6347;
+}
+
+
+/* Table Body */
+.comparisonBody {
+  background: #333;
+}
+
+
+/* Rows */
+.comparisonRow {
+  border: 2px solid #444;
+  transition: 0.3s ease;
+}
+
+
+.comparisonRow:hover {
+  background: #444;
+}
+
+
+/* Cells */
+.comparisonRow td {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  border: 2px solid #444;
+}
+
+
+/* First Column */
+.comparisonRow td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #ff6347;
+}
+
+

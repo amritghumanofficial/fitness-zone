@@ -1,0 +1,184 @@
+/* Trainers Section */
+
+.trainers-section {
+    background-color: #121214;
+    padding: 80px 40px;
+    margin-top: 0px;
+}
+
+
+/* Trainer Grid */
+.trainer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+
+/* Trainer Card */
+.trainer-card {
+    background-color: #1a1a1a;
+    border: 2px solid #292929;
+    border-radius: 22px;
+    padding: 30px 25px;
+    color: white;
+    text-align: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+
+.trainer-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff4d4d;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+
+/* Trainer Name */
+.trainer-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+
+/* Specialization */
+.trainer-specialization {
+    color: #ff4d4d;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Experience */
+.trainer-experience {
+    display: inline-block;
+    background-color: #292929;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+}
+
+.trainer-card:hover .trainer-experience {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+/* Bio */
+.trainer-bio {
+    color: #bdbdbd;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* Social Links */
+.trainer-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #292929;
+    color: white;
+    border: 1px solid #3a3a3a;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.social-btn svg {
+    font-size: 18px;
+    color: #ff4d4d;
+}
+
+
+.social-btn:hover {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    transform: translateY(-3px);
+}
+
+
+.social-btn:hover svg {
+    color: white;
+}
+
+
+.benefit-section{
+        background-color: #121214;
+    padding: 80px 40px;
+    margin-top: -70px;
+}
+.benefit-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.benefit-card{
+     background-color: #1a1a1a;
+    border: 2px solid #292929;
+    border-radius: 22px;
+    padding: 30px 25px;
+    color: white;
+    text-align: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.benefit-card:hover{
+     transform: translateY(-10px);
+    border-color: #ff4d4d;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.benefit-icon{
+    color: #ff4d4d;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.benefit-card h3{
+    padding-top: 15px;
+}
+
+@media (max-width: 900px) {
+    .trainer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .trainer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trainers-section {
+        padding: 60px 20px;
+    }
+}

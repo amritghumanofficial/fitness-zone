@@ -1,0 +1,186 @@
+/* Classes Section */
+
+.classes-section {
+    background-color: #121214;
+    padding: 80px 40px;
+    margin-top: -70px;
+}
+
+
+/* Classes Grid */
+
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+
+
+/* Class Card */
+
+.class-card {
+    background-color: #1a1a1a;
+    border: 2px solid #292929;
+    border-radius: 23px;
+    overflow: hidden;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+
+.class-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff6347;
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.5);
+}
+
+
+
+/* Image Area */
+
+.class-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.class-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Content */
+
+.class-content {
+    padding: 25px;
+}
+
+/* Title */
+
+.class-name {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Badges */
+
+.class-badges {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.class-badges span {
+    background-color: #ff6347;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Info */
+
+.class-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+
+.class-info p {
+    color: #cccccc;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Description */
+
+.class-description {
+    color: #bdbdbd;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Button */
+
+.class-btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.class-btn:hover {
+    background-color: #e04f33;
+    transform: translateY(-3px);
+}
+
+.classesCard-section{
+    background-color: #1f1f1f;
+    padding: 15px;
+}
+.category-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 1px solid #555;
+  background: #1f1f1f;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.filter-btn:hover {
+  background: #e04f33;
+  color: #fff;
+}
+
+
+@media(max-width:1024px){
+
+    .classes-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .classes-section {
+        padding:60px 20px;
+    }
+
+    .classes-grid {
+        grid-template-columns:1fr;
+    }
+
+    .class-content {
+        padding:20px;
+    }
+
+}

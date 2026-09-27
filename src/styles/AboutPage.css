@@ -1,0 +1,362 @@
+/*
+   ABOUT PAGE - MAIN STYLESHEET
+*/
+
+/* 1. HERO & GENERAL LAYOUT */
+.about-hero {
+  padding: 80px 20px 40px;
+  background-color: #121214;
+  text-align: center;
+}
+
+.about-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 2. Our Story Section */
+.story-section {
+  padding: 80px 20px;
+  background-color: #121214;
+}
+
+.story-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.story-content p {
+  color: #bdbdbd;
+  line-height: 1.8;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+/* Story Card */
+.story-card {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 22px;
+  border: 2px solid #292929;
+  display: grid;
+  gap: 20px;
+}
+
+
+.highlight-item {
+  background-color: #121214;
+  padding: 20px 25px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #292929;
+  transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+  border-color: #ff4d4d;
+}
+
+.highlight-number {
+  color: #ff4d4d;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.highlight-text {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* 3. MISSION & VISION SECTION */
+.mission-section {
+  padding: 80px 20px;
+  background-color: #121214;
+}
+
+.mission-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.mission-card {
+  background-color: #1a1a1a;
+  padding: 40px 30px;
+  border-radius: 22px;
+  border: 2px solid #292929;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff4d4d;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.mission-card div {
+  font-size: 40px;
+  color: #ff4d4d;
+  margin-bottom: 15px;
+}
+
+.mission-card h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.mission-card p {
+  color: #bdbdbd;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* 4. ABOUT FEATURES SECTION  */
+
+.about-features-section {
+  padding: 80px 20px;
+  background-color: #121214;
+}
+
+
+.about-features-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr; 
+  gap: 40px;
+  align-items: start;
+}
+
+
+.features-content {
+  width: 100%;
+  min-width: 0;
+}
+
+.features-content p {
+  color: #bdbdbd;
+  line-height: 1.8;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+
+.top-features-cards {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px;
+}
+
+.bottom-features-cards {
+    grid-column: 1 /-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.about-feature-card {
+  background-color: #1a1a1a;
+  padding: 30px 25px;
+  border-radius: 20px;
+  border: 2px solid #292929;
+  transition: all 0.3s ease;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-6px);
+  border-color: #ff4d4d;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292929;
+  border-radius: 50%;
+  font-size: 26px;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.about-feature-card:hover .feature-icon {
+  background-color: #ff4d4d;
+  color: #ffffff;
+}
+
+.about-feature-card h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-feature-card p {
+  color: #bdbdbd;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+/* 5. STATS SECTION */
+.about-stats-section {
+  padding: 80px 20px;
+  background-color: #121214;
+}
+
+.about-stats-container {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* 6. CALL TO ACTION (CTA) SECTION */
+.about-cta {
+  padding: 80px 20px;
+  background-color: #111827;
+}
+
+.about-cta-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 28px;
+  border: 2px solid #292929;
+}
+
+.about-cta-container h2 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.about-cta-container p {
+  color: #bdbdbd;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.about-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cta-primary-btn {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-primary-btn:hover {
+  background-color: #e63939;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 77, 77, 0.3);
+}
+
+.cta-secondary-btn {
+  background-color: #292929;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid #3a3a3a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-secondary-btn:hover {
+  background-color: #3a3a3a;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+  .story-container,
+  .about-features-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mission-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .about-features-wrapper {
+    grid-template-columns: 1fr; 
+    gap: 30px;
+  }
+
+  .bottom-features-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .story-section,
+  .mission-section,
+  .about-features-section,
+  .about-stats-section,
+  .about-cta {
+    padding: 50px 15px;
+  }
+
+  .about-features-grid,
+  .about-stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .story-card,
+  .about-cta-container {
+    padding: 30px 20px;
+  }
+
+  .about-cta-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-primary-btn,
+  .cta-secondary-btn {
+    width: 100%;
+  }
+}

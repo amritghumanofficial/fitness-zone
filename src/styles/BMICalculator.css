@@ -1,0 +1,224 @@
+/* BMI Section */
+
+.bmi-calculator-section{
+    padding:80px 0;
+    background:#111827;
+}
+
+
+/* 
+   BMI CARD
+*/
+
+.bmi-card{
+    width: 90%;
+    max-width: 650px;
+    margin: 0px auto;
+    background: #1f2937;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+
+.bmi-card:hover{
+    border-color: #ff6347;
+}
+
+
+/* Title */
+
+.bmi-card h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+
+/* INPUT Group */
+
+.input-group{
+    margin-bottom: 25px;
+}
+
+
+.input-group label{
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+
+.input-group input,
+.input-group select{
+
+    width: 100%;
+    padding: 14px 15px;
+    background: #111827;
+    color: #ffffff;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s ease;
+
+}
+
+.input-group input:focus,
+.input-group select:focus{
+
+    border-color: #ff6347;
+
+}
+
+.input-group select{
+
+    margin-top: 12px;
+    cursor: pointer;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ERROR MESSAGE */
+
+.input-group p{
+
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 8px;
+
+}
+
+
+
+
+/* BUTTONS */
+
+.bmi-buttons{
+
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+
+}
+
+
+.calculate-btn,
+.reset-btn{
+
+    flex: 1;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+}
+
+
+/* Calculate */
+
+.calculate-btn{
+
+    background: #ff6347;
+    color: white;
+
+}
+
+
+.calculate-btn:hover{
+
+    background: #e5533d;
+    transform: translateY(-3px);
+
+}
+
+
+/* Reset */
+
+.reset-btn{
+
+    background: transparent;
+    color: white;
+    border: 1px solid #ff6347;
+
+}
+
+
+.reset-btn:hover{
+
+    background: #ff6347;
+    transform: translateY(-3px);
+
+}
+
+
+
+/* RESULT BOX */
+
+.result-box{
+
+    margin-top: 35px;
+    padding: 30px;
+    background: #111827;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #374151;
+
+}
+
+
+.result-box h3{
+
+    color: #ff6347;
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+}
+
+
+.result-box h4{
+
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+
+}
+
+
+.result-box p{
+
+    color: #bfbfbf;
+    line-height: 1.7;
+}
+
+@media(max-width:600px){
+    .bmi-card{
+        padding: 25px;
+    }
+
+    .bmi-card h2{
+        font-size: 1.6rem;
+    }
+
+    .bmi-buttons{
+        flex-direction: column;
+    }
+
+    .calculate-btn,
+    .reset-btn{
+        width:100%;
+    }
+
+}
