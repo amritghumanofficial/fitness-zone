@@ -1,65 +1,84 @@
 /* Trainers Section */
 
 .trainers-section {
+    width: 100%;
+    box-sizing: border-box;
     background-color: #121214;
     padding: 80px 40px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 
-/* Trainer Grid */
+/*   Trainer Grid */
+
 .trainer-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    width: 100%;
     max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
     margin: 40px auto 0;
+    box-sizing: border-box;
 }
 
 
-/* Trainer Card */
+/*   Trainer Card */
+
 .trainer-card {
+    width: 100%;
+    min-width: 0;
+
     background-color: #1a1a1a;
     border: 2px solid #292929;
     border-radius: 22px;
+
     padding: 30px 25px;
     color: white;
     text-align: center;
     transition: all 0.4s ease;
     cursor: pointer;
+    box-sizing: border-box;
 }
-
 
 .trainer-card:hover {
     transform: translateY(-10px);
     border-color: #ff4d4d;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
 
 /* Trainer Name */
+
 .trainer-name {
     font-size: 24px;
     font-weight: 700;
+
     margin-bottom: 10px;
     color: #ffffff;
+    overflow-wrap: break-word;
 }
 
 
 /* Specialization */
+
 .trainer-specialization {
     color: #ff4d4d;
+
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    overflow-wrap: break-word;
 }
 
 
 /* Experience */
+
 .trainer-experience {
     display: inline-block;
+    max-width: 100%;
     background-color: #292929;
     color: #ffffff;
     padding: 8px 18px;
@@ -67,6 +86,7 @@
     margin-bottom: 20px;
     font-size: 14px;
     transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
 }
 
 .trainer-card:hover .trainer-experience {
@@ -74,29 +94,38 @@
     color: white;
 }
 
+
 /* Bio */
+
 .trainer-bio {
     color: #bdbdbd;
     line-height: 1.7;
     font-size: 15px;
     margin-bottom: 20px;
+    overflow-wrap: break-word;
 }
 
 
 /* Social Links */
+
 .trainer-links {
     display: flex;
+
     justify-content: center;
+    align-items: center;
     gap: 12px;
     margin-top: 20px;
     flex-wrap: wrap;
+    max-width: 100%;
 }
-
 
 .social-btn {
     display: flex;
+
     align-items: center;
+    justify-content: center;
     gap: 8px;
+
     background-color: #292929;
     color: white;
     border: 1px solid #3a3a3a;
@@ -105,14 +134,15 @@
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-
 .social-btn svg {
+    flex-shrink: 0;
     font-size: 18px;
     color: #ff4d4d;
 }
-
 
 .social-btn:hover {
     background-color: #ff4d4d;
@@ -120,27 +150,44 @@
     transform: translateY(-3px);
 }
 
-
 .social-btn:hover svg {
     color: white;
 }
 
 
-.benefit-section{
-        background-color: #121214;
+/* Benefits Section */
+
+.benefit-section {
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #121214;
     padding: 80px 40px;
     margin-top: -70px;
 }
-.benefit-grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px;
+
+
+/* Benefit Grid */
+
+.benefit-grid {
+    width: 100%;
     max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
     margin: 40px auto 0;
+    box-sizing: border-box;
 }
 
-.benefit-card{
-     background-color: #1a1a1a;
+
+/* Benefit Card */
+
+.benefit-card {
+    width: 100%;
+    min-width: 0;
+
+    background-color: #1a1a1a;
     border: 2px solid #292929;
     border-radius: 22px;
     padding: 30px 25px;
@@ -148,37 +195,141 @@
     text-align: center;
     transition: all 0.4s ease;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
-.benefit-card:hover{
-     transform: translateY(-10px);
+.benefit-card:hover {
+    transform: translateY(-10px);
     border-color: #ff4d4d;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
-.benefit-icon{
+
+/*   Benefit Icon */
+
+.benefit-icon {
     color: #ff4d4d;
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.benefit-card h3{
+.benefit-card h3 {
     padding-top: 15px;
+    overflow-wrap: break-word;
 }
+
+
+/* Tablet */
 
 @media (max-width: 900px) {
+
     .trainer-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
     }
 }
 
 
+/* Mobile */
+
 @media (max-width: 600px) {
-    .trainer-grid {
-        grid-template-columns: 1fr;
-    }
 
     .trainers-section {
-        padding: 60px 20px;
+        padding: 60px 15px;
+    }
+
+    .trainer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin-top: 30px;
+    }
+
+    .trainer-card {
+        padding: 25px 20px;
+    }
+
+
+    /* Benefits */
+
+    .benefit-section {
+        padding: 50px 15px;
+        margin-top: 0;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .benefit-card {
+        padding: 25px 20px;
+    }
+
+    .trainer-card:hover,
+    .benefit-card:hover {
+        transform: none;
+    }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 360px) {
+
+    .trainers-section {
+        padding: 45px 10px;
+    }
+
+    .trainer-grid {
+        gap: 15px;
+    }
+
+    .trainer-card {
+        padding: 22px 15px;
+    }
+
+    .trainer-name {
+        font-size: 21px;
+    }
+
+    .trainer-specialization {
+        font-size: 14px;
+
+        letter-spacing: 0.7px;
+    }
+
+    .trainer-bio {
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+    .social-btn {
+        padding: 9px 12px;
+
+        font-size: 13px;
+    }
+
+
+    /* Benefits */
+
+    .benefit-section {
+        padding: 40px 10px;
+    }
+
+    .benefit-grid {
+        gap: 15px;
+    }
+
+    .benefit-card {
+        padding: 22px 15px;
     }
 }

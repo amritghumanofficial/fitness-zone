@@ -103,6 +103,8 @@
     }
     .nav-links.open {
         display: flex;
+        top: 54px;
+        gap: 7px;
     }
 
     .join-btn {
