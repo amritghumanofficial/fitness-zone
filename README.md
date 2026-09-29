@@ -218,7 +218,7 @@ fitness-zone/
 
 <div align="center">
 
-**Amrit Ghuman**
+**Amritpal Singh**
 
 [![GitHub](https://img.shields.io/badge/GitHub-@amritghumanofficial-181717?style=flat-square&logo=github)](https://github.com/amritghumanofficial)
 
